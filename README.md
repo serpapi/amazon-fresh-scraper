@@ -547,7 +547,7 @@ Use SerpApi APIs without writing code:
 - Track the prices, unit prices, and discounts of groceries over time.
 - Compare grocery prices and availability across ZIP codes and Amazon Fresh marketplaces.
 - Monitor where your products and your competitors' products rank for a grocery search, with their ratings, reviews, and purchases in the past month.
-- Build a catalog of the groceries available in an area by browsing Amazon Fresh departments with `node`.
+- Research the assortment of an Amazon Fresh department in an area, e.g., which brands it carries, with `node`.
 - Find SNAP EBT eligible or Climate Pledge Friendly groceries with `rh` filters.
 - Give AI agents, RAG pipelines, and meal planning apps a grocery search tool.
 
