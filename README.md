@@ -271,6 +271,7 @@ Markdown is plain text, not JSON: YAML front matter with the search metadata, fo
 | curl | `--data-urlencode output="md"` |
 | Python | `client.search({..., "output": "md"})` |
 | PHP | `$client->md([...])` |
+| Go | `client.Md(map[string]string{...})` |
 | Rust | `client.md(parameter).await?` |
 
 If your SDK doesn't have a Markdown helper yet, send a plain HTTP request with `output=md` and read the body as text. Learn more about [Markdown output](https://serpapi.com/markdown-output?utm_source=github_amazon_fresh_scraper).
@@ -498,7 +499,7 @@ Other MCP clients:
 }
 ```
 
-The server's engine catalog doesn't include the `amazon_fresh` engine yet, but its `search` tool passes any engine through to SerpApi. Ask your agent to search Amazon Fresh with the `amazon_fresh` engine and a `delivery_zip`. The resulting tool call looks like this:
+The server's engine catalog includes the `amazon_fresh` engine, and its `serpapi://engines/amazon_fresh` resource describes the parameters. Ask your agent to search Amazon Fresh with the `amazon_fresh` engine and a `delivery_zip`. The resulting tool call looks like this:
 
 ```json
 {
